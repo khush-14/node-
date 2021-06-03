@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/87664ecf99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/chat.css">
+    <title>chatApp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title"><i class="far fa-smile"></i>ChatCord</h1>
+            <input type="button" value="Leave Room" id="leave">
+        </div>
+        <div class="mid">
+            <div class="details">
+               <div class="roomName">
+                    <div class="roomNameTag"><i class="far fa-comments" style="padding:5px"></i>Room Name : </div>
+                    <div class="room"></div>
+                </div>
+                <div class="users">
+                    <div class="userTag"><i class="fas fa-users"></i>Users : </div>
+                    <ul class="UserNames">
+                    </ul>
+    
+                </div>
+            </div>
+            <div class="chat">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="messageType">
+                <input type="text" class="enterMessage" placeholder="Enter message..." id="inpMsg">
+                <button class="SendBtn" id ="SendBtn"><i class="fas fa-paper-plane"></i>Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"></script>
+    <!--to access to frontend library and in main js file to access io library-->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

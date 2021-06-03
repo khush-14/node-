@@ -1,0 +1,139 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(135deg,rgb(209, 248, 253),rgba(252, 248, 248, 0.993));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    margin: 31px;
+    width: 92%;
+}
+
+.header, .mid, .footer {
+    display: flow-root;
+    background-color: slateblue;
+ 
+}
+
+#title {
+    color: white;
+    margin: 3px;
+    float: left;
+}
+i{
+    padding: 5px;
+}
+#leave:hover {
+    background-color: red;
+    color: white;
+}
+
+#leave {
+    background-color: ghostwhite;
+    float: right;
+    margin: 12px;
+    /* height: 26px; */
+    padding: 6px;
+    color: mediumblue;
+}
+.chat {
+    display: block;
+    float: right;
+
+    overflow-y: scroll;
+    background-color: white;
+    height: 285px;
+    width: 75%;
+}
+
+.details {
+    display: block;
+    float: left;
+    height: 285px;
+    width: 25%;
+    /* padding-top: 0; */
+    padding: 10px;
+}
+.users {
+    display: block;
+    width: -webkit-fill-available;
+    box-sizing: border-box;
+    color: white;
+    height: 60%;
+    padding: inherit;
+}
+
+.roomName {
+    padding: inherit;
+    display: block;
+    width: -webkit-fill-available;
+    height: 40%;
+    color: white;
+}
+.message {
+    height: fit-content;
+    padding: 3px;
+    margin: 6px;
+    /* position: fixed; */
+    display: block;
+    float: right;
+    width: -webkit-fill-available;
+    
+}
+.name, .text {
+    text-align: end;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: 5px;
+    background-color: rgba(243, 243, 243, 0.555);
+    width: fit-content;
+}
+.name{
+    color:rgba(90, 90, 224, 0.877);
+}
+.time{
+    font-size: small;
+    color:rgb(87, 86, 86);
+}
+.enterMessage {
+    padding: 7px;
+    margin: 11px;
+    margin-right: 0;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+}
+.roomName, .users {
+    overflow-y: scroll;
+}
+.room {
+    padding: 6px;
+    font-size: 18px;
+    background-color: blueviolet;
+    margin: 6px;
+}
+li {
+    font-size: 15px;
+    padding: 4px;
+}
+.SendBtn {
+    padding: 3px;
+    margin-left: 0;
+    color: slateblue;
+    width: 7%;
+}
+.SendBtn:hover{
+    cursor: pointer;
+    background-color: rgb(23, 160, 23);
+    color: white;
+}
